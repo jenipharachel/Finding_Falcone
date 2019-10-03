@@ -1,11 +1,16 @@
 import React from "react";
 import "./Footer.css";
+import { Container, Navbar, NavbarBrand } from "reactstrap";
 
 const Footer = () => {
   return (
-    <div>
-      <h5>Coding problem</h5>
-      <h6>www.geektrust.in/finding-falcone</h6>
+    <div className="fixed-bottom">
+      <Navbar color="light" dark>
+        <Container>
+          <NavbarBrand>Coding problem</NavbarBrand>
+          <NavbarBrand>www.geektrust.in/finding-falcone</NavbarBrand>
+        </Container>
+      </Navbar>
     </div>
   );
 };
